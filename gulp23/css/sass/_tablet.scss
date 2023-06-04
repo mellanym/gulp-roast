@@ -1,0 +1,20 @@
+@media (max-width: 600) {
+	article {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+	nav {
+		margin: 0 1rem;
+		ul {
+			display: block;
+		}
+		a {
+			margin: 0 0 2rem 0;
+			text-align: center;
+		}
+	}
+	.img {
+		flex-basis: 24%;
+	}
+}

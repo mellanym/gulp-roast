@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+	.logo {
+		flex-basis: 100%;
+		text-align: center;
+		margin: 0;
+	}
+	nav {
+		ul {
+			justify-content: center;
+		}
+		a {
+			margin: 0 0 1rem 0;
+		}
+	}
+}

@@ -1,0 +1,152 @@
+
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+	&:before {
+		box-sizing: inherit;
+	}
+	&:after {
+		box-sizing: inherit;
+	}
+}
+body {
+	background-color: $background-color_1;
+	@include nospace;
+	font-family: $main-font;
+	line-height: 2;
+}
+h1 {
+	font-family: $secondary-font;
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+h2 {
+	font-family: $secondary-font;
+}
+h3 {
+	font-family: $secondary-font;
+}
+img {
+	max-width: 100%;
+}
+.container {
+	border: 5px solid #ffffff;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0rem;
+}
+.item {
+	background-color: $background-color_2;
+	color: $color_1;
+	font-weight: regular;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 3rem;
+}
+a {
+	color: $color_2;
+	&:hover {
+		text-decoration: none;
+	}
+}
+header {
+	border-bottom: 10px solid #d98555;
+}
+nav {
+	ul {
+		@include nospace;
+		list-style-type: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		gap: 1rem;
+	}
+	li {
+		margin: 0 1rem 1rem 1rem;
+		font-size: 1.3rem;
+	}
+	.logo {
+		img {
+			max-width: 150px;
+		}
+		flex-basis: 100%;
+		text-align: flex-start;
+		justify-content: auto;
+	}
+	a {
+		color: $color_3;
+		text-decoration: none;
+		display: block;
+		border-radius: $corners;
+		margin-top: 3.5rem;
+		&:hover {
+			color: $color_4;
+		}
+	}
+}
+.logo {
+	margin-right: auto;
+}
+.main-bkgd {
+	background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+	padding-bottom: 300px;
+}
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+article {
+	flex-basis: 73%;
+}
+figure {
+	margin: 3rem 0 0 0;
+	flex-basis: 25%;
+	background-color: $background-color_3;
+	border-radius: $corners;
+	img {
+		border-top-left-radius: $corners;
+		border-top-right-radius: $corners;
+	}
+}
+figcaption {
+	color: $color_5;
+	padding: 0.5rem;
+}
+.button {
+	display: inline-block;
+	background-color: $background-color_3;
+	border-radius: $corners;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	color: $color_5;
+	text-decoration: none;
+	border: 3px solid #59331d;
+	&:hover {
+		background-color: $background-color_4;
+		color: $color_2;
+	}
+}
+footer {
+	color: $color_5;
+	text-align: center;
+	border-top: 10px solid #d98555;
+	ul {
+		list-style-type: none;
+		@include nospace;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	a {
+		color: $color_5;
+		font-size: 2rem;
+		display: block;
+		margin: 0 1rem 3rem 1rem;
+	}
+}
